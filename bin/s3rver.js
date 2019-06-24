@@ -48,6 +48,10 @@ program
     "Port of the http server",
     S3rver.defaultOptions.port
   )
+  .option(
+    "--disable-vhost",
+    "Disable virtual host-style request"
+  )
   .option("-s, --silent", "Suppress log messages", S3rver.defaultOptions.silent)
   .option(
     "--key <path>",
